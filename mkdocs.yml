@@ -1,4 +1,5 @@
 site_name: Dragon
+theme: readthedocs
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
