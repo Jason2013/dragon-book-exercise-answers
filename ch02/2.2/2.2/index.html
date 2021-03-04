@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Exercises for Section 2.2 - Dragon</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Exercises for Section 2.2";
+    var mkdocs_page_input_path = "ch02\\2.2\\2.2.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Dragon</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Compilers Principles, Techniques, &amp; Tools (purple dragon book) second edition exercise answers</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch01</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.1/1.1/">Exercises for Section 1.1</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.3/1.3/">Exercises for Section 1.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.6/1.6/">Exercises for Section 1.6</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch02</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">2.2</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Exercises for Section 2.2</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#221">2.2.1</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer">Answer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#222">2.2.2</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer_1">Answer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#223">2.2.3</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer_2">Answer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#224">2.2.4</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer_3">Answer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#225">2.2.5</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer_4">Answer</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#226">2.2.6</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#answer_5">Answer</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.3/2.3/">2.3 Exercises for Section 2.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.4/2.4/">2.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.6/2.6/">Exercises for Section 2.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.8</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.8/2.8/">Exercises for Section 2.8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Key point</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../key-point/key-point/">第2章要点</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch03</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.1/3.1/">Exercises for Section 3.1</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.3/3.3/">Exercises for Section 3.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.4/3.4/">3.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.5/3.5/">Exercises for Section 3.5</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.6/3.6/">3.6 Exercises for Section 3.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.7/3.7/">Exercises for Section 3.7</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.8</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.8/3.8/">Exercises for Section 3.8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.9</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.9/3.9/">Exercises for Section 3.9</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Key point</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/key-point/key-point/">第3章要点</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch04</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.2/4.2/">Exercises for Section 4.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.3/4.3/">4.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.4/4.4/">4.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.5/4.5/">4.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.6/4.6/">4.6 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.7/4.7/">4.7 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Key point</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/key-point/key-point/">第4章要点</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch05</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.1/5.1/">5.1 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.2/5.2/">5.2 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.3/5.3/">5.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.4/5.4/">5.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.5/5.5/">5.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch06</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.1/6.1/">6.1 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.2/6.2/">6.2 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.3/6.3/">6.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.4/6.4/">6.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.5/6.5/">6.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.6/6.6/">6.6 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.7/6.7/">6.7 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch07</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.2/7.2/">Exercises for Section 7.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.3/7.3/">Exercises for Section 7.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.4/7.4/">Exercises for Section 7.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.5/7.5/">Exercises for Section 7.5</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.6/7.6/">Exercises for Section 7.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.7/7.7/">Exercises for Section 7.7</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch08</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.2/8.2/">Exercises for Section 8.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.3/8.3/">Exercises for Section 8.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.4/8.4/">Exercises for Section 8.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.5/8.5/">Exercises for Section 8.5</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch12</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">12.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch12/12.3/12.3/">Exercises for Section 12.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">12.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch12/12.7/12.7/">Exercises for Section 12.7</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Dragon</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>2.2 &raquo;</li>
+        
+      
+        
+          <li>Ch02 &raquo;</li>
+        
+      
+    
+    <li>Exercises for Section 2.2</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="exercises-for-section-22">Exercises for Section 2.2</h1>
+<h3 id="221">2.2.1</h3>
+<p>Consider the context-free grammar:</p>
+<p>S -&gt; S S + | S S * | a</p>
+<ol>
+<li>Show how the string <code>aa+a*</code> can be generated by this grammar.</li>
+<li>Construct a parse tree for this string.</li>
+<li>What language does this grammar generate? Justify your answer.</li>
+</ol>
+<h4 id="answer">Answer</h4>
+<ol>
+<li><code>S</code> -&gt; <code>S</code> S * -&gt; <code>S</code> S + S * -&gt; a <code>S</code> + S * -&gt; a a + <code>S</code> * -&gt; a a + a *</li>
+<li><img alt="Syntax tree" src="https://raw.github.com/fool2fish/dragon-book-practice-answer/master/ch02/2.2/assets/2.2.1-2.png" /></li>
+<li>L = {Postfix expression consisting of digits, plus and multiple signs}</li>
+</ol>
+<h3 id="222">2.2.2</h3>
+<p>What language is generated by the following grammars? In each case justify your answer.</p>
+<ol>
+<li>S -&gt; 0 S 1 | 0 1</li>
+<li>S -&gt; + S S | - S S | a</li>
+<li>S -&gt; S ( S ) S | ε</li>
+<li>S -&gt; a S b S | b S a S | ε</li>
+<li>S -&gt; a | S + S | S S | S * | ( S )</li>
+</ol>
+<h4 id="answer_1">Answer</h4>
+<ol>
+<li>L = {0<sup>n</sup>1<sup>n</sup> | n&gt;=1}</li>
+<li>L = {Prefix expression consisting of plus and minus signs}</li>
+<li>L = {Matched brackets of arbitrary arrangement and nesting, includes ε}</li>
+<li>L = {String has the same amount of a and b, includes ε}</li>
+<li>L = {Regular expressions used to describe regular languages} <a href="http://en.wikipedia.org/wiki/Regular_expression">refer to wiki</a></li>
+</ol>
+<h3 id="223">2.2.3</h3>
+<p>Which of the grammars in Exercise 2.2.2 are ambiguous?</p>
+<h4 id="answer_2">Answer</h4>
+<ol>
+<li>No</li>
+<li>No</li>
+<li>Yes</li>
+</ol>
+<p><img alt="ambiguous parse tree" src="https://raw.github.com/fool2fish/dragon-book-practice-answer/master/ch02/2.2/assets/2.2.3-3.png" /></p>
+<ol>
+<li>
+<p>Yes</p>
+<p><img alt="ambiguous parse tree" src="https://raw.github.com/fool2fish/dragon-book-practice-answer/master/ch02/2.2/assets/2.2.3-4.png" /></p>
+</li>
+<li>
+<p>Yes</p>
+<p><img alt="ambiguous parse tree" src="https://raw.github.com/fool2fish/dragon-book-practice-answer/master/ch02/2.2/assets/2.2.3-5.png" /></p>
+</li>
+</ol>
+<h3 id="224">2.2.4</h3>
+<p>Construct unambiguous context-free grammars for each of
+the following languages. In each case show that your grammar is correct.</p>
+<ol>
+<li>Arithmetic expressions in postfix notation.</li>
+<li>Left-associative lists of identifiers separated by commas.</li>
+<li>Right-associative lists of identifiers separated by commas.</li>
+<li>Arithmetic expressions of integers and identifiers with the four binary operators +, -, *, /.</li>
+<li>Add unary plus and minus to the arithmetic operators of 4.</li>
+</ol>
+<h4 id="answer_3">Answer</h4>
+<pre><code>1. E -&gt; E E op | num
+
+2. list -&gt; list , id | id
+
+3. list -&gt; id , list | id
+
+4. expr -&gt; expr + term | expr - term | term
+   term -&gt; term * factor | term / factor | factor
+   factor -&gt; id | num | (expr)
+
+5. expr -&gt; expr + term | expr - term | term
+   term -&gt; term * unary | term / unary | unary
+   unary -&gt; + factor | - factor | factor
+   factor - &gt; id | num | (expr)
+</code></pre>
+<h3 id="225">2.2.5</h3>
+<ol>
+<li>
+<p>Show that all binary strings generated by the following grammar have values divisible by 3. Hint. Use induction on the number of nodes in a parse tree.</p>
+<p>num -&gt; 11 | 1001 | num 0 | num num</p>
+</li>
+<li>
+<p>Does the grammar generate all binary strings with values divisible by 3?</p>
+</li>
+</ol>
+<h4 id="answer_4">Answer</h4>
+<ol>
+<li>
+<p>Proof</p>
+<p>Any string derived from the grammar can be considered to be a sequence consisting of 11 and 1001, where each sequence element is possibly suffixed with a 0.</p>
+<p>Let <code>n</code> be the set of positions where <code>11</code> is placed. <code>11</code> is said to be at position <code>i</code> if the first <code>1</code> in <code>11</code> is at position <code>i</code>, where <code>i</code> starts at 0 and
+grows from least significant to most significant bit.</p>
+<p>Let <code>m</code> be the equivalent set for <code>1001</code>.</p>
+<p>The sum of any string produced by the grammar is:</p>
+<p>sum</p>
+<p>= Σ<sub>n</sub> (2<sup>1</sup> + 2<sup>0</sup>) * 2 <sup>n</sup> + Σ<sub>m</sub> (2<sup>3</sup> + 2<sup>0</sup>) * 2<sup>m</sup></p>
+<p>= Σ<sub>n</sub> 3 * 2 <sup>n</sup> + Σ<sub>m</sub> 9 * 2<sup>m</sup></p>
+<p>This is clearly divisible by 3.</p>
+</li>
+<li>
+<p>No. Consider the string "10101", which is divisible by 3, but cannot be
+   derived from the grammar.</p>
+<p>Readers seeking a more formal proof can read about it below:</p>
+<p><strong>Proof</strong>:</p>
+<p>Every number divisible by 3 can be written in the form <code>3k</code>. We will consider <code>k &gt; 0</code> (though it would be valid to consider <code>k</code> to be an arbitrary integer).</p>
+<p>Note that every part of num(11, 1001 and 0) is divisible by 3, if the grammar could generate all the numbers divisible by 3, we can get a production for binary k from num's production:</p>
+<p><code>3k = num   -&gt; 11 | 1001 | num 0 | num num
+ k = num/3 -&gt; 01 | 0011 | k 0   | k k
+ k         -&gt; 01 | 0011 | k 0   | k k</code></p>
+<p>It is obvious that any value of <code>k</code> that has more than 2 consecutive bits set to 1 can never be produced. This can be confirmed by the example given in the beginning:</p>
+<p>10101 is 3*7, hence, k = 7 = 111 in binary. Because 111 has more than 2
+consecutive 1's in binary, the grammar will never produce 21.</p>
+</li>
+</ol>
+<h3 id="226">2.2.6</h3>
+<p>Construct a context-free grammar for roman numerals.</p>
+<p><strong>Note:</strong> we just consider a subset of roman numerals which is less than 4k.</p>
+<h4 id="answer_5">Answer</h4>
+<p><a href="http://en.wikipedia.org/wiki/Roman_numerals">wikipedia: Roman_numerals</a></p>
+<ul>
+<li>
+<p>via wikipedia, we can categorize the single roman numerals into 4 groups:</p>
+<p><code>I, II, III | I V | V, V I, V II, V III | I X</code></p>
+<p>then get the production:</p>
+<p><code>digit -&gt; smallDigit | I V | V smallDigit | I X
+smallDigit -&gt; I | II | III | ε</code></p>
+</li>
+<li>
+<p>and we can find a simple way to map roman to arabic numerals. For example:</p>
+<ul>
+<li>XII =&gt; X, II =&gt; 10 + 2 =&gt; 12</li>
+<li>CXCIX =&gt; C, XC, IX =&gt; 100 + 90 + 9 =&gt; 199</li>
+<li>MDCCCLXXX =&gt; M, DCCC, LXXX =&gt; 1000 + 800 + 80 =&gt; 1880</li>
+</ul>
+</li>
+<li>
+<p>via the upper two rules, we can derive the production:</p>
+<p>romanNum -&gt; thousand hundred ten digit</p>
+<p>thousand -&gt; M | MM | MMM | ε</p>
+<p>hundred -&gt; smallHundred | C D | D smallHundred | C M</p>
+<p>smallHundred -&gt; C | CC | CCC  | ε</p>
+<p>ten -&gt; smallTen | X L | L smallTen | X C</p>
+<p>smallTen -&gt; X | XX | XXX | ε</p>
+<p>digit -&gt; smallDigit | I V | V smallDigit | I X</p>
+<p>smallDigit -&gt; I | II | III  | ε</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../2.3/2.3/" class="btn btn-neutral float-right" title="2.3 Exercises for Section 2.3">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../../ch01/1.6/1.6/" class="btn btn-neutral" title="Exercises for Section 1.6"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../../ch01/1.6/1.6/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../2.3/2.3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../javascripts/config.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>第2章要点 - Dragon</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7b2c2\u7ae0\u8981\u70b9";
+    var mkdocs_page_input_path = "ch02\\key-point\\key-point.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Dragon</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Compilers Principles, Techniques, &amp; Tools (purple dragon book) second edition exercise answers</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch01</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.1/1.1/">Exercises for Section 1.1</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.3/1.3/">Exercises for Section 1.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch01/1.6/1.6/">Exercises for Section 1.6</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch02</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.2/2.2/">Exercises for Section 2.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.3/2.3/">2.3 Exercises for Section 2.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.4/2.4/">2.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.6/2.6/">Exercises for Section 2.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">2.8</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../2.8/2.8/">Exercises for Section 2.8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Key point</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">第2章要点</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#1">1. 文法、语法制导翻译方案、语法制导的翻译器</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2_1">2. 语法树、语法分析树</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3">3. 正则文法、上下文无关文法、上下文相关文法?</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_1">正则文法</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_2">正则文法和上下文无关文法</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_3">上下文相关文法</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-n-n1">4. 为什么有 n 个运算符的优先级，就对应 n+1 个产生式？</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5">5. 避免二义性文法的有效原则？</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6">6. 避免预测分析器因左递归文法造成的无限循环</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7">7. 为什么在右递归的文法中，包含了左结合运算符的表达式翻译会比较困难？</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#8">8. 中间代码生成时的左值和右值问题。</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch03</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.1/3.1/">Exercises for Section 3.1</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.3/3.3/">Exercises for Section 3.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.4/3.4/">3.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.5/3.5/">Exercises for Section 3.5</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.6/3.6/">3.6 Exercises for Section 3.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.7/3.7/">Exercises for Section 3.7</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.8</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.8/3.8/">Exercises for Section 3.8</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">3.9</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/3.9/3.9/">Exercises for Section 3.9</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Key point</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch03/key-point/key-point/">第3章要点</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch04</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.2/4.2/">Exercises for Section 4.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.3/4.3/">4.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.4/4.4/">4.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.5/4.5/">4.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.6/4.6/">4.6 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">4.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/4.7/4.7/">4.7 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Key point</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch04/key-point/key-point/">第4章要点</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch05</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.1/5.1/">5.1 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.2/5.2/">5.2 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.3/5.3/">5.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.4/5.4/">5.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">5.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch05/5.5/5.5/">5.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch06</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.1</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.1/6.1/">6.1 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.2/6.2/">6.2 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.3/6.3/">6.3 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.4/6.4/">6.4 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.5/6.5/">6.5 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.6/6.6/">6.6 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">6.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch06/6.7/6.7/">6.7 节的练习</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch07</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.2/7.2/">Exercises for Section 7.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.3/7.3/">Exercises for Section 7.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.4/7.4/">Exercises for Section 7.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.5/7.5/">Exercises for Section 7.5</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.6</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.6/7.6/">Exercises for Section 7.6</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">7.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch07/7.7/7.7/">Exercises for Section 7.7</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch08</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.2/8.2/">Exercises for Section 8.2</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.3/8.3/">Exercises for Section 8.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.4</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.4/8.4/">Exercises for Section 8.4</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">8.5</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch08/8.5/8.5/">Exercises for Section 8.5</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Ch12</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">12.3</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch12/12.3/12.3/">Exercises for Section 12.3</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">12.7</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ch12/12.7/12.7/">Exercises for Section 12.7</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Dragon</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Key point &raquo;</li>
+        
+      
+        
+          <li>Ch02 &raquo;</li>
+        
+      
+    
+    <li>第2章要点</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="2">第2章要点</h1>
+<h3 id="1">1. 文法、语法制导翻译方案、语法制导的翻译器</h3>
+<p>以一个仅支持个位数加减法的表达式为例</p>
+<ol>
+<li>
+<p>文法</p>
+<p>list -&gt; list + digit | list - digit | digit</p>
+<p>digit -&gt; 0 | 1 | … | 9</p>
+</li>
+<li>
+<p>（消除了左递归的）语法制导翻译方案</p>
+<p>expr -&gt; term rest</p>
+<p>rest -&gt; + term { print('+') } rest | - term { print('+') } rest | ε</p>
+<p>term -&gt; 0 { print('0') } | 1 { print('1') } | … | 9 { print('9') }</p>
+</li>
+<li>
+<p>语法制导的翻译器</p>
+<p>java代码见 p46</p>
+</li>
+</ol>
+<h3 id="2_1">2. 语法树、语法分析树</h3>
+<p>以 2 + 5 - 9 为例</p>
+<p><img alt="语法树和语法分析树" src="https://raw.github.com/fool2fish/dragon-book-practice-answer/master/ch02/key-point/assets/dragonbook-keypoint-2.2-2.png" /></p>
+<h3 id="3">3. 正则文法、上下文无关文法、上下文相关文法?</h3>
+<p>文法缩写：</p>
+<ul>
+<li>RG：<a href="http://en.wikipedia.org/wiki/Regular_grammar">正则文法</a></li>
+<li>CFG：<a href="http://en.wikipedia.org/wiki/Context-free_grammar">上下文无关文法</a></li>
+<li>CSG：<a href="http://en.wikipedia.org/wiki/Context-sensitive_grammar">上下文相关文法</a></li>
+</ul>
+<h4 id="_1">正则文法</h4>
+<p><a href="http://en.wikipedia.org/wiki/Regular_grammar">wiki</a></p>
+<p>正则文法在标准之后所有产生式都应该满足下面三种情形中的一种：</p>
+<pre><code>B -&gt; a
+B -&gt; a C
+B -&gt; epsilon
+</code></pre>
+<p>关键点在于：</p>
+<ol>
+<li>产生式的左手边必须是一个非终结符。</li>
+<li>产生式的右手边可以什么都没有，可以有一个终结符，也可以有一个终结符加一个非终结符。</li>
+</ol>
+<p>从产生式的角度看，这样的规定使得每应用一条产生规则，就可以产生出零或一个终结符，直到最后产生出我们要的那个字符串。</p>
+<p>从匹配的角度看，这样的规定使得每应用一条规则，就可以消耗掉一个非终结符，直到整个字符串被匹配掉。</p>
+<p>这样定义的语言所对应的自动机有一种性质：有限状态自动机。</p>
+<p>简单来说就是只需要记录当前的一个状态，和得到下一个输入符号，就可以决定接下来的状态迁移。</p>
+<h4 id="_2">正则文法和上下文无关文法</h4>
+<p>CFG 跟 RG 最大的区别就是，产生式的右手边可以有零或多个终结符或非终结符，顺序和个数都没限制。</p>
+<p>想像一个经典例子，括号的配对匹配：</p>
+<p>expr -&gt; '(' expr ')' | epsilon</p>
+<p>这个产生式里（先只看第一个子产生式），右手边有一个非终结符 expr，但它的左右两侧都有终结符，这种产生式无法被标准化为严格的 RG 。这就是CFG的一个例子。</p>
+<p>它对应的自动机就不只要记录当前的一个状态，还得外加记录到达当前位置的历史，才可以根据下一个输入符号决定状态迁移。所谓的“历史”在这里就是存着已匹配规则的栈。</p>
+<p>CFG 对应的自动机为 PDA(下推自动机)。</p>
+<p>RG 的规定严格，对应的好处是它对应的自动机非常简单，所以可以用非常高效且简单的方式来实现。</p>
+<h4 id="_3">上下文相关文法</h4>
+<p>CSG 在 CFG的基础上进一步放宽限制。</p>
+<p>产生式的左手边也可以有终结符和非终结符。左手边的终结符就是“上下文”的来源。也就是说匹配的时候不能光看当前匹配到哪里了，还得看当前位置的左右到底有啥（也就是上下文是啥），上下文在这条规则应用的时候并不会被消耗掉，只是“看看”。</p>
+<p>CSG 的再上一层是 PSG，phrase structure grammar。</p>
+<p>基本上就是CSG的限制全部取消掉。</p>
+<p>左右两边都可以有任意多个、任意顺序的终结符和非终结符。</p>
+<p>反正不做自然语言处理的话也不会遇到这种文法，所以具体就不说了。</p>
+<h3 id="4-n-n1">4. 为什么有 n 个运算符的优先级，就对应 n+1 个产生式？</h3>
+<p>优先级的处理可以在纯文法层面解决，也可以在parser实现中用别的办法处理掉。</p>
+<p>纯文法层面书上介绍的，有多少个优先级就有那么多加1个产生式。</p>
+<p>书上介绍的四则运算的文法，会使得加减法离根比较近，乘除法离根比较远。</p>
+<p>语法树的形状决定了节点的计算顺序，离根远的节点就会先处理，这样看起来就是乘除法先计算，也就是乘除法的优先级更高。</p>
+<p>参考：http://rednaxelafx.iteye.com/blog/492667</p>
+<h3 id="5">5. 避免二义性文法的有效原则？</h3>
+<p>二义性问题主要是跟 CFG 的特性有关系的。</p>
+<p>CFG 的选择结构（"|"）是没有规定顺序或者说优先级的，
+同时，多个规则可能会有共同前缀，
+这样才会有二义性问题。</p>
+<p>PEG 是跟CFG类似的一种东西，语言的表达力上跟CFG相似。
+但文法层面没有二义性，因为它的选择结构（"|"）是有顺序或者说有优先级的。</p>
+<h3 id="6">6. 避免预测分析器因左递归文法造成的无限循环</h3>
+<p>产生式：</p>
+<p>A -&gt; A x | y</p>
+<p>语法制导翻译伪代码片段：</p>
+<pre><code>void A(){
+    switch(lookahead){
+        case x:
+            A();match(x);break;
+        case y:
+            match(y):break;
+        default:
+            report("syntax error")
+    }
+}
+</code></pre>
+<p>当语句符合 A x 形式时， A() 运算会陷入死循环，可以通过将产生式改为等价的非左递归形式来避免: </p>
+<p>B -&gt; y C</p>
+<p>C -&gt; x C | ε</p>
+<h3 id="7">7. 为什么在右递归的文法中，包含了左结合运算符的表达式翻译会比较困难？</h3>
+<h3 id="8">8. 中间代码生成时的左值和右值问题。</h3>
+<p>看了书上 lvalue() 和 rvalue() 的伪代码，感觉可以做左值也可以做右值的都由 lvalue() 处理，而对于右值的处理，要么自己处理掉了，对于可以作为左值的右值则调用 lvalue()。</p>
+<p>为什么不直接弄个 value() 就结了？</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../ch03/3.1/3.1/" class="btn btn-neutral float-right" title="Exercises for Section 3.1">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../2.8/2.8/" class="btn btn-neutral" title="Exercises for Section 2.8"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../2.8/2.8/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../../ch03/3.1/3.1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../javascripts/config.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
